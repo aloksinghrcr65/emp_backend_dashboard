@@ -12,4 +12,5 @@ router.get('/all', courseController.getAllCoursesByEmployees);
 router.post('/buy/courseId', authenticateEmployee, courseController.buyCourse)
 
 
+
 module.exports = router;
