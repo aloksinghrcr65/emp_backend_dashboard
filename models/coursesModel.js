@@ -9,6 +9,7 @@ const courseSchema = new Schema({
     courseUploadDate: { type: Date, default: Date.now },
     courseValidUpto: { type: String, required: true },
     addedBy: {
+        
         username: { type: String, required: true },
         email: { type: String, required: true },
         role: { type: String, required: true }

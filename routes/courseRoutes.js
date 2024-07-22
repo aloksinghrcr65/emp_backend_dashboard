@@ -6,8 +6,6 @@ const { authenticateEmployee, authenticateVendor } = require('../middleware/isAd
 // router.post('/add', authenticateAdmin, courseController.addCourse);
 // router.get('/', authenticateAdmin, courseController.getCourse);
 // router.get('/all', courseController.getAllCourse);
-
-
 router.post('/add', authenticateVendor, courseController.addCourse);
 router.get('/my-courses', authenticateVendor, courseController.getCourseByVendor);
 router.get('/all', courseController.getAllCoursesByEmployees);
