@@ -110,6 +110,7 @@ class EmployeeService {
         return response.Not_found('Employee not found');
       }
   
+      
      return response.sendSuccess('Employee updated successfully', updatedEmployee);
     } catch (error) {
       console.log("error", error)

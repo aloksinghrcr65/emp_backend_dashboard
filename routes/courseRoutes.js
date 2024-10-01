@@ -9,8 +9,7 @@ const { authenticateEmployee, authenticateVendor } = require('../middleware/isAd
 router.post('/add', authenticateVendor, courseController.addCourse);
 router.get('/my-courses', authenticateVendor, courseController.getCourseByVendor);
 router.get('/all', courseController.getAllCoursesByEmployees);
-router.post('/buy/courseId', authenticateEmployee, courseController.buyCourse)
-
+router.post('/buy/courseId', authenticateEmployee, courseController.buyCourse);
 
 
 module.exports = router;
